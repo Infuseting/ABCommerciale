@@ -1,0 +1,58 @@
+body{
+    --secondary-color : rgb(10 9 28);
+    --secondary-active-color: #15122C;
+    --secondary-hover-color: #23203F;
+    --primary-color : rgb(255 255 255);
+    --primary-hover-color: #C8C8C8;
+    --primary-active-color: #9BA9BA;
+    --card-color : white;
+    --card-contour : grey;
+    background-color: var(--secondary-color);
+}
+.content{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content .newsContainer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    color: var(--primary-color); /* Couleur par default*/
+    
+}
+.content .newsContainer .left{
+    padding-left: 2.5%;
+    padding-right: 1em;
+    min-width: 6em;
+}
+.content .newsContainer .left h2,.content .newsContainer .left h3{
+    text-align: end;
+}
+.content .newsContainer .divider{
+    border: 1.5px solid var(--primary-color);
+    background-color: var(--primary-color);
+    width: 1.5px;
+    border-radius: 34px;
+    height: auto;
+}
+.content .newsContainer .right {
+    padding-left: 1em;
+}
+.content .newsContainer .right .title{
+   text-align: start;
+}
+.content .newsContainer .right .title h2{
+    font-size: 40px;
+}
+.content .newsContainer .right .title h3{
+    font-size: 36px;
+}
+.content .newsContainer .right .newsText h3{
+    font-size: 20px;
+}

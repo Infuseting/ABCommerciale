@@ -1,0 +1,146 @@
+body{
+    --secondary-color : rgb(10 9 28);
+    --secondary-active-color: #15122C;
+    --secondary-hover-color: #23203F;
+    --primary-color : rgb(255 255 255);
+    --primary-hover-color: #C8C8C8;
+    --primary-active-color: #9BA9BA;
+    --card-color : white;
+    --card-contour : grey;
+    background-color: var(--secondary-color);
+}
+.content{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    padding-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;    
+}
+.content div{
+    flex: 3 1 25%;
+}
+.content .left{
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    max-width: 25%;
+    align-content: flex-start;
+}
+.content .left .divide-horizontal{
+    border: 1.5px solid var(--primary-color);
+    background-color: var(--primary-color);
+    width: auto;
+    max-height: 1.5px;
+    border-radius: 34px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    height: 1.5px;
+    flex: 3 1 1.5px;
+}
+.content .left span{
+    margin-right: 10%;
+    padding-bottom: 1em;
+}
+.content .left span, .content .left .search-bar {
+    width: 100%;
+    
+}
+.content .left .search-bar{
+    margin-right: 10%;
+    background-color: var(--primary-color);
+    padding: 1em 1em 1em 1em;
+    height : 3em;
+    border-radius: 12px;
+}
+.content .left .checkbox-bar{
+    width: 24px;
+    height: 24px;
+}
+.content .left span{
+    font-size: 24px;
+    color: var(--primary-color);
+}
+.content .divider {
+    border: 1.5px solid var(--primary-color);
+    background-color: var(--primary-color);
+    width: 1.5px;
+    max-width: 1.5px;
+    border-radius: 34px;
+    height: auto;
+    flex: 3 1 1.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.content .right {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+.content .right .card{
+    margin-left: 4em;
+    margin-bottom: 4em;
+    flex: 3 1 25%;
+    min-width: 10em;
+    max-width: 25em;
+    min-height: 10em;
+    background-color: var(--card-color);
+    border: 2px solid var(--card-contour);
+    border-radius: 12px; 
+}
+.content .right .card .right .card-content{
+    margin: 2em 2em 2em 2em;
+}
+.content .right .card h2{
+    
+    font-size: 24px;
+    width: 80%;
+    margin-left: 1em;
+    padding-left: 1em;
+    margin-right: 2em;
+    color: var(--secondary-active-color);
+    text-shadow: var(--secondary-hover-color) 1px 0 15px;
+    border-bottom: 1px solid var(--secondary-active-color)
+    
+}
+.content .right .card .text-content{
+    
+}
+.content .right .card li{
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.content .right .card .buy{
+    text-align: center;
+    font-size: 24px;
+    color: var(--primary-color);
+    border: 0 solid none;
+    background-color: var(--secondary-color);
+    border-radius: 32px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.content .right .card .buy:hover{
+    background-color : var(--secondary-hover-color);
+    cursor: pointer;
+}

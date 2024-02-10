@@ -1,0 +1,593 @@
+body,html {
+    --secondary-color : rgb(10 9 28);
+    --secondary-active-color: #15122C;
+    --secondary-hover-color: #23203F;
+    --primary-color : rgb(255 255 255);
+    --primary-hover-color: #C8C8C8;
+    --primary-active-color: #9BA9BA;
+    --text-color: #121212;
+	--active-btn: #f4f4f6;
+	--bkg-color: #fff;
+	--side-delete: rgb(45, 45, 45);
+    margin: 0 0 0 0; 
+	
+	
+}
+
+
+#WH128{
+    width: 128px;
+    height: 128px;
+}
+
+.nav-bar{
+    z-index: 10;
+    top: 0px;
+    position: fixed;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding : 0 0 0 0;
+    width: 100%;
+    height: 128px;
+    background-color: var(--primary-color);   
+}
+
+.left-bar{
+    position:absolute;
+    width: 30%;
+    padding-left: 10%;
+    height: 128px;
+}
+.right-bar{
+    position: absolute;
+    box-sizing: border-box;
+    width: 60%;
+    left: 40%;
+    height: 128px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 5%;
+}
+
+.right-bar span, .right-bar  ul,  .right-bar a{
+    flex: 1 1 5%;
+    text-align: center;
+    align-self: center;
+    margin-block: 0 0;
+    padding: 0 0 0 0;
+    font-size: 20px;
+    cursor: pointer;
+    list-style-type: none;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.right-bar span:hover{
+    color: var(--secondary-hover-color);
+    text-shadow: var(--secondary-hover-color) 1px 0 10px;
+    
+}
+.right-bar span:active{
+    color: var(--secondary-active-color);
+    text-shadow: var(--secondary-active-color) 1px 0 10px;
+}
+
+
+
+.footer {
+    padding:50px 0;
+    color:var(--secondary-color);
+    background-color:var(--primary-color);
+    box-sizing: border-box;
+}
+
+.footer h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    text-align: center;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.footer ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+}
+
+.footer ul a {
+color:inherit;
+text-decoration:none;
+opacity:0.6;
+}
+
+.footer ul a:hover {
+opacity:0.8;
+}
+
+.footer footer{
+    display: block;
+    
+}
+.footer .container .row .col-sm-6{
+    max-width: 33%;
+    position: relative;
+    width: 100%;
+}
+.footer .container .row .col-md-6{
+    max-width: 33%;
+    position: relative;
+    width: 100%;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.footer .container .row{
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    
+}
+
+.footer .item.text {
+margin-bottom:36px;
+}
+
+.footer .item.text p {
+opacity:0.6;
+margin-bottom:0;
+}
+
+.footer .item.social {
+text-align:center;
+}
+
+.footer .item.social > a {
+font-size:20px;
+width:36px;
+height:36px;
+line-height:36px;
+display:inline-block;
+text-align:center;
+border-radius:50%;
+box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+margin:0 8px;
+color:#fff;
+opacity:0.75;
+}
+
+.footer .item.social > a:hover {
+opacity:0.9;
+}
+
+.footer .copyright {
+text-align:center;
+padding-top:24px;
+opacity:0.3;
+font-size:13px;
+margin-bottom:0;
+}
+.footer ul{
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.login-form-container { 
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 1200;
+}
+.login-form-container .blur{
+	-webkit-backdrop-filter: blur(15px); 
+	backdrop-filter: blur(15px);
+	width: 100vw;
+	height: 100vh;
+
+}
+.login-form-container .cross {
+	position: fixed;
+	border: solid 5px var(--text-color);
+	border-radius: 100%;
+	font-size: 48px;
+	width: 64px;
+	height: 64px;
+	right: 5vh;
+	top: 5vh;
+	z-index: 1005;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.login-form-container .cross:hover{
+	border: solid 5px var(--active-btn);
+}
+
+.login-form-container .container{
+	
+	position: fixed;
+    margin: 0 0 0 0;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20cm;
+	height: 11cm;
+	border-radius: 20px;
+	background: var(--bkg-color);
+	z-index: 1005;
+}
+	
+.login-form-container .container .left{
+	position: absolute;
+	width: 50%;
+	height: 100%;
+}
+.login-form-container .container .right{
+	position: absolute;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+
+}
+
+.login-form-container .container .right .Transform{
+	position: inherit;
+	z-index: 0;
+	background: linear-gradient(-45deg, #15122C 0%, #23203F 100%);
+	top: 0;
+	width: 101%;
+	height: 75%;
+    top:-1px;
+    left: 2px;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
+	transition: transform 0.25s ease;
+	transform: translate(0%, 0%);
+	padding-top: 27.5%;
+}
+
+.login-form-container .container .right .Transform.active{
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	transition: transform 0.25s ease;
+	transform: translate(-100%, 0%);
+	
+}
+
+.login-form-container .container .right .TransformSignIn h2{
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	top: 10%;
+	color: var(--bkg-color);
+}
+
+.login-form-container .container .right .TransformSignIn p {
+	position: relative;
+	font-size: 15px;
+	text-align: center;
+	top: 15%;
+	color: var(--bkg-color);
+}
+.login-form-container .container .right .TransformSignIn button {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	height: 48px;
+	background: none;
+	border: solid 1px var(--bkg-color);
+	color: var(--bkg-color);
+	border-radius: 30px;
+	top: 20%;
+}
+
+.login-form-container .container .right .TransformSignIn button:hover {
+	background: orange;
+}
+
+
+.login-form-container .container .right .TransformSignOn h2{
+	position: relative;
+	font-size: 20px;
+	text-align: center;
+	top: 10%;
+	color: var(--bkg-color);
+}
+
+.login-form-container .container .right .TransformSignOn p {
+	position: relative;
+	font-size: 15px;
+	text-align: center;
+	top: 15%;
+	color: var(--bkg-color);
+}
+.login-form-container .container .right .TransformSignOn button {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 40%;
+	height: 48px;
+	background: none;
+	border: solid 1px var(--bkg-color);
+	color: var(--bkg-color);
+	border-radius: 30px;
+	top: 20%;
+}
+
+.login-form-container .container .right .TransformSignOn button:hover {
+	background: orange;
+}
+
+
+.login-form-container .container .left .login .Content h3 {
+	position: relative;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	padding-left: 5%;
+}
+
+
+.login-form-container .container .left .login .Content{
+	position:inherit;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.login-form-container .container .left .login .Content p{
+	position: absolute;
+	top: 0;
+	right: 20px;
+	max-height: 32px;
+	width: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.login-form-container .container .left .login .Content a{
+	text-decoration: none;
+}
+
+.login-form-container .container .left .login {
+	position: inherit;
+	width: 100%;
+	height: 100%;
+}
+.login-form-container .container .left .login .Content .Button-Social span{
+	position: relative;
+	color: var(--text-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border: solid 1px var(--text-color);
+	border-radius: 100%;
+
+}
+.login-form-container .container .left .login .Content .login-form .Pseudonyme label{
+	position: relative;
+	text-transform: uppercase;
+	padding-left: 10%;
+	top: 10%;
+	letter-spacing: 1px;
+	font-family: "Lato", Arial, sans-serif;
+	line-height: 2;
+	font-size: 12px;
+	color: var(--text-color);
+}
+.login-form-container .container .left .login .Content .login-form .Pseudonyme input{
+	position: relative;
+	margin-left: 5%;
+	width: 80%;
+	height: 48px;
+	background: var(--active-btn);
+	border: solid 1px transparent;
+	padding-left: 30px;
+	border-radius: 40px;
+}
+
+
+.login-form-container .container .left .login .Content .login-form .Password label{
+	position: relative;
+	text-transform: uppercase;
+	padding-left: 10%;
+	letter-spacing: 1px;
+	font-family: "Lato", Arial, sans-serif;
+	line-height: 2;
+	font-size: 12px;
+	color: var(--text-color);
+	
+}
+.login-form-container .container .left .login .Content .login-form .Password input{
+	position: relative;
+	margin-left: 5%;
+	width: 80%;
+	height: 48px;
+	background: var(--active-btn);
+	border: solid 1px transparent;
+	padding-left: 30px;
+	border-radius: 40px;
+}
+.login-form-container .container .left .login .Content .login-form .Submit{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 3em;
+}
+.login-form-container .container .left .login .Content .login-form .Submit .form-button:hover {
+	background: orange;
+}
+.login-form-container .container .left .login .Content .login-form .Submit .form-button {
+	width: 20em;
+	height: 4em;
+	border: solid 1px var(--text-color);
+	background: linear-gradient(-45deg, #f75959 0%, #f35587 100%);
+	border-radius: 30px;
+}
+
+.login-form-container .container .left .login .Content .login-form .text-right {
+	position: relative;
+	top: -2.5em;
+	left: 5em;
+	color: #f35588;
+	font-size: 18px;
+}
+
+
+
+
+
+.login-form-container .container .right .signin h3 {
+	position: relative;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	padding-right: 5%;
+	text-align: end;
+}
+
+
+.login-form-container .container .right .signin{
+	position:inherit;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+.login-form-container .container .right .signin p{
+	position: absolute;
+	top: 0;
+	left: 20px;
+	max-height: 32px;
+	width: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.login-form-container .container .right .signin a{
+	text-decoration: none;
+}
+
+.login-form-container .container .right .signin {
+	position: inherit;
+	width: 100%;
+	height: 100%;
+}
+.login-form-container .container .right .signin .social-icon span{
+	position: relative;
+	color:var(--text-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border: solid 1px var(--text-color);
+	border-radius: 100%;
+
+}
+.login-form-container .container .signin-form .Pseudonyme label{
+	position: relative;
+	text-transform: uppercase;
+	padding-left: 10%;
+	top: 10%;
+	letter-spacing: 1px;
+	font-family: "Lato", Arial, sans-serif;
+	line-height: 2;
+	font-size: 12px;
+	color: var(--text-color);
+}
+.login-form-container .container .signin-form .Pseudonyme input{
+	position: relative;
+	margin-left: 5%;
+	width: 80%;
+	height: 48px;
+	background: var(--active-btn);
+	border: solid 1px transparent;
+	padding-left: 30px;
+	border-radius: 40px;
+}
+.login-form-container .container .signin-form .Email label{
+	position: relative;
+	text-transform: uppercase;
+	padding-left: 10%;
+	top: 10%;
+	letter-spacing: 1px;
+	font-family: "Lato", Arial, sans-serif;
+	line-height: 2;
+	font-size: 12px;
+	color: var(--text-color);
+}
+.login-form-container .container .signin-form .Email input{
+	position: relative;
+	margin-left: 5%;
+	width: 80%;
+	height: 48px;
+	background: var(--active-btn);
+	border: solid 1px transparent;
+	padding-left: 30px;
+	border-radius: 40px;
+}
+
+.login-form-container .container .signin-form .Password label{
+	position: relative;
+	text-transform: uppercase;
+	padding-left: 10%;
+	letter-spacing: 1px;
+	font-family: "Lato", Arial, sans-serif;
+	line-height: 2;
+	font-size: 12px;
+	color: var(--text-color);
+}
+.login-form-container .container .signin-form .Password input{
+	position: relative;
+	margin-left: 5%;
+	width: 80%;
+	height: 48px;
+	background: var(--active-btn);
+	border: solid 1px transparent;
+	padding-left: 30px;
+	border-radius: 40px;
+}
+.login-form-container .container .signin-form .Submit{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 3em;
+}
+.login-form-container .container .signin-form .text-right {
+	position: relative;
+	top: -2em;
+	color: #f35588;
+	font-size: 18px;
+	text-align: center;
+}
+.login-form-container .container.signin-form .Submit{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	top: 3em;
+}
+.login-form-container .container .signin-form .Submit .form-button:hover {
+	background: orange;
+}
+.login-form-container .container .signin-form .Submit .form-button {
+	width: 20em;
+	height: 4em;
+	border: solid 1px var(--text-color);
+	background: linear-gradient(-45deg, #f75959 0%, #f35587 100%);
+	border-radius: 30px;
+}
+.hidden {
+	display: none;
+}

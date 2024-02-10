@@ -1,0 +1,73 @@
+body {
+    --primary-color : rgb(10 9 28);
+    --secondary-color : rgb(255 255 255);
+    
+}
+
+.content{
+    width: 100%;
+    margin-top: 128px;
+    background-color: var(--secondary-color);
+    padding-bottom: 10%;
+}
+
+.content .part {
+    padding-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: space-evenly;
+    
+    
+}
+.content .part div {
+    max-width: 760px;
+}
+.content .part div:first-child{
+    width: auto;
+    max-width: 760px;
+    flex: 0 0 auto;
+    color: var(--primary-color);
+    text-align:end;
+    font-size: 16px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    align-items: center;
+    
+
+}
+.content .part div:first-child span{
+    display: block;
+    font-size: 20px;
+}
+.content .part div:nth-child(2){
+    width: 4px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    
+}
+.content .part div:last-child{
+    width: auto;
+    flex: 0 0 auto;
+    color: var(--primary-color);
+    text-align:left;
+    font-size: 16px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    align-items: center;
+}
+.content .part div:last-child span, .content .part div:last-child p{
+    display: block;
+    font-size: 20px;
+}
+
+.content .part img{
+    min-width: 320px;
+    min-height: 320px;
+    max-height: 480px;
+    max-width: 480px;
+}
